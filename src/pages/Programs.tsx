@@ -3,8 +3,7 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import heroImage from "../assets/images/hero-section.png"
-import "../index.css"
+import { useNavigate } from "react-router-dom"
 
 const Programs = () => {
   useEffect(() => {
@@ -13,6 +12,8 @@ const Programs = () => {
       once: true,
     })
   }, [])
+
+  const navigate = useNavigate()
 
   const programs = [
     {
@@ -64,7 +65,7 @@ const Programs = () => {
       {/* Hero Section */}
       <section
         className="relative h-[600px] bg-cover bg-center pt-[calc(100px)]"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url('/images/hero-section.png')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
           <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white mb-4 dark:text-slate-200 text-center">
@@ -91,7 +92,7 @@ const Programs = () => {
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay={index * 100}
-                className="bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative"
+                className="flex flex-col justify-around bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative"
               >
                 {program.isNew && (
                   <span className="absolute top-4 right-4 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
@@ -130,51 +131,44 @@ const Programs = () => {
                 </div>
 
                 <button
-                  className="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors duration-200 text-sm font-medium"
+                  className={`w-full py-2 px-4 rounded transition-colors duration-200 text-sm font-medium ${
+                    program.isNew
+                      ? "bg-gray-400 dark:bg-gray-600 text-gray-200 cursor-not-allowed"
+                      : "bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white"
+                  }`}
                   onClick={() => {
-                    // Future implementation: navigate to program detail page
-                    console.log(`Navigate to ${program.link}`)
+                    if (!program.isNew) {
+                      // Future implementation: navigate to program detail page
+                      console.log(`Navigate to ${program.link}`)
+                    }
                   }}
+                  disabled={program.isNew}
                 >
-                  Learn More
+                  {program.isNew ? "Coming Soon" : "Learn More"}
                 </button>
               </div>
             ))}
           </div>
 
-          {/* Additional Information */}
-          <div className="mt-12 bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6">
-            <h3 className="text-2xl font-semibold mb-4 dark:text-slate-200">Program Information</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-medium mb-2 text-blue-700 dark:text-blue-400">Admission Requirements</h4>
-                <ul className="text-sm text-gray-700 dark:text-slate-300 space-y-1">
-                  <li>• Minimum 85% General Weighted Average</li>
-                  <li>• Certified Resident of Mandaluyong</li>
-                  <li>• Senior High School Graduate or equivalent</li>
-                  <li>• Complete documentary requirements</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-2 text-blue-700 dark:text-blue-400">Academic Calendar</h4>
-                <ul className="text-sm text-gray-700 dark:text-slate-300 space-y-1">
-                  <li>• Semester-based academic year</li>
-                  <li>• 18-21 units per semester</li>
-                  <li>• Summer classes available</li>
-                  <li>• Flexible scheduling options</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
           {/* Call to Action */}
-          <div className="mt-8 text-center">
+          <div className="pt-8 mt-8 text-center">
             <p className="text-lg text-gray-700 dark:text-slate-300 mb-4">Ready to start your journey with us?</p>
             <div className="space-x-4">
-              <button className="bg-blue-900 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSc1wetVpXWkg_4nUZQeWjlHGJ2zDxdXGrNcmJrGj0EXmUtadw/viewform",
+                    "_blank",
+                  )
+                }
+                className="bg-blue-900 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
+              >
                 Apply Now
               </button>
-              <button className="border border-blue-900 dark:border-blue-600 text-blue-900 dark:text-blue-400 hover:bg-blue-900 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium">
+              <button
+                onClick={() => navigate("/admission")}
+                className="border border-blue-900 dark:border-blue-600 text-blue-900 dark:text-blue-400 hover:bg-blue-900 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
+              >
                 Learn More About Admissions
               </button>
             </div>
