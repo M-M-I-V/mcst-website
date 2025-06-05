@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
@@ -9,7 +11,7 @@ import About from "./pages/About"
 import Programs from "./pages/Programs"
 import Admission from "./pages/Admission"
 import Apply from "./pages/Apply"
-import "./index.css"
+import Communication from "./pages/Communication"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -49,6 +51,7 @@ function App() {
             <Route path="/programs" element={<Programs />} />
             <Route path="/admission" element={<Admission />} />
             <Route path="/apply" element={<Apply />} />
+            <Route path="/communication" element={<Communication />} />
           </Routes>
         </main>
         <Footer />
