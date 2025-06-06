@@ -63,7 +63,7 @@ const Communication = () => {
       </section>
 
       {/* Course Curriculum Header */}
-      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200" className="py-">
+      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">Course Curriculum</h2>
         </div>

@@ -30,7 +30,7 @@ const Programs = () => {
         "Learn to design, implement, and manage information systems that support business operations and decision-making in the digital age.",
       duration: "4 years",
       strand: "STEM, TVL-ICT",
-      link: "/information-systems", // Future implementation
+      link: "/programs/bs-information-systems",
     },
     {
       title: "Bachelor of Science in Mathematics",
@@ -38,7 +38,7 @@ const Programs = () => {
         "Build a strong foundation in mathematical theory and applications, preparing for careers in education, research, data analysis, and various STEM fields.",
       duration: "4 years",
       strand: "STEM, ABM",
-      link: "/mathematics", // Future implementation
+      link: "/programs/bs-mathematics",
     },
     {
       title: "Bachelor of Public Administration",
@@ -46,7 +46,7 @@ const Programs = () => {
         "Prepare for leadership roles in government and public service, focusing on policy analysis, public management, and civic engagement.",
       duration: "4 years",
       strand: "All Strands",
-      link: "/public-administration", // Future implementation
+      link: "/programs/b-public-administration", // Future implementation
       isNew: true,
     },
     {
@@ -55,7 +55,7 @@ const Programs = () => {
         "Develop expertise in physical fitness, sports science, and health education to become effective physical education teachers and fitness professionals.",
       duration: "4 years",
       strand: "All Strands",
-      link: "/physical-education", // Future implementation
+      link: "/programs/b-physical-education", // Future implementation
       isNew: true,
     },
   ]

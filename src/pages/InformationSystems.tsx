@@ -3,6 +3,10 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import ISOne from "../assets/images/is-one.jpg"
+import ISTwo from "../assets/images/is-two.jpg"
+import ISThree from "../assets/images/is-three.jpg"
+
 
 const InformationSystems = () => {
   useEffect(() => {
@@ -31,7 +35,7 @@ const InformationSystems = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src={ISOne || "/placeholder.svg?height=400&width=600"}
                 alt="Information Systems students working with technology"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -40,7 +44,7 @@ const InformationSystems = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src="/placeholder.svg?height=200&width=300"
+                  src={ISTwo || "/placeholder.svg?height=200&width=300"} 
                   alt="Information Systems students in computer lab"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -48,7 +52,7 @@ const InformationSystems = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src="/placeholder.svg?height=200&width=300"
+                  src={ISThree || "/placeholder.svg?height=200&width=300"}
                   alt="Information Systems students collaborating on projects"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -60,14 +64,14 @@ const InformationSystems = () => {
       </section>
 
       {/* Course Curriculum Header */}
-      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200" className="py-8">
+      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">Course Curriculum</h2>
         </div>
       </section>
 
       {/* First Year */}
-      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200" className="py-8">
+      <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200" className="pb-8">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">First Year</h2>
 

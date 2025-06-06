@@ -12,6 +12,8 @@ import Programs from "./pages/Programs"
 import Admission from "./pages/Admission"
 import Apply from "./pages/Apply"
 import Communication from "./pages/Communication"
+import InformationSystems from "./pages/InformationSystems"
+import Mathematics from "./pages/Mathematics"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -51,7 +53,9 @@ function App() {
             <Route path="/programs" element={<Programs />} />
             <Route path="/admission" element={<Admission />} />
             <Route path="/apply" element={<Apply />} />
-            <Route path="programs/ba-communication" element={<Communication />} />
+            <Route path="/programs/ba-communication" element={<Communication />} />
+            <Route path="/programs/bs-information-systems" element={<InformationSystems />} />
+            <Route path="/programs/bs-mathematics" element={<Mathematics />} />
           </Routes>
         </main>
         <Footer />

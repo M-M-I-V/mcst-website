@@ -13,7 +13,7 @@ const ThemeToggle = ({ darkMode, toggleDarkMode }: ThemeToggleProps) => {
         className="bg-gray-800 text-white px-4 py-2 rounded-full shadow hover:bg-gray-700 transition-colors"
         aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
-        <span id="theme-icon">{darkMode ? "🌞" : "🌓"}</span>
+        <span id="theme-icon">{darkMode ? "🌗" : "🌓"}</span>
       </button>
     </div>
   )
