@@ -37,17 +37,19 @@ const NewsEvents = () => {
           data-aos-offset="200"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
+          {/* Card 1: Releasing of Grade Slip */}
           <a
             href="https://www.facebook.com/share/p/1DcaiN5EFT/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition"
+            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            <div className="aspect-w-16 aspect-h-8 bg-gray-200">
+            {/* Image Container - Removed aspect-w/h and added specific height */}
+            <div className="w-full h-48 bg-gray-200">
               <img
                 src={gradesImage || "/placeholder.svg"}
-                alt="Blog Image"
-                className="w-full h-48 object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                alt="Schedule of Releasing of Grade Slip" // More descriptive alt text
+                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
               />
             </div>
@@ -61,7 +63,7 @@ const NewsEvents = () => {
               <div className="flex items-center mt-4 text-gray-500">
                 <img
                   src={mcstLogo || "/placeholder.svg"}
-                  alt="Author"
+                  alt="Mandaluyong College of Science and Technology Logo" // Descriptive alt text
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
                 />
@@ -75,17 +77,19 @@ const NewsEvents = () => {
             </div>
           </a>
 
+          {/* Card 2: Bachelor of Public Administration */}
           <a
             href="https://www.facebook.com/share/p/15BEth4yLm/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition"
+            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            <div className="aspect-w-16 aspect-h-8 bg-gray-200">
+            {/* Image Container - Removed aspect-w/h and added specific height */}
+            <div className="w-full h-48 bg-gray-200">
               <img
                 src={publicAdImage || "/placeholder.svg"}
-                alt="Blog Image"
-                className="w-full h-48 object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                alt="Bachelor of Public Administration offering" // More descriptive alt text
+                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
               />
             </div>
@@ -101,7 +105,7 @@ const NewsEvents = () => {
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
                   src={mcstLogo || "/placeholder.svg"}
-                  alt="Author"
+                  alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
                 />
@@ -113,14 +117,21 @@ const NewsEvents = () => {
             </div>
           </a>
 
+          {/* Card 3: Bachelor of Physical Education */}
           <a
             href="https://www.facebook.com/share/p/1CLcKp3Xzc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition"
+            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            <div className="aspect-w-16 aspect-h-8 bg-gray-200">
-              <img src={peImage || "/placeholder.svg"} alt="Blog Image" className="w-full h-48 object-cover" />
+            {/* Image Container - Removed aspect-w/h and added specific height */}
+            <div className="w-full h-48 bg-gray-200">
+              <img
+                src={peImage || "/placeholder.svg"}
+                alt="Bachelor of Physical Education offering" // More descriptive alt text
+                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                loading="lazy" // Added loading="lazy" for consistency
+              />
             </div>
             <div className="p-4">
               <p className="text-xs font-medium text-gray-500 dark:text-slate-300">Announcement</p>
@@ -134,7 +145,7 @@ const NewsEvents = () => {
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
                   src={mcstLogo || "/placeholder.svg"}
-                  alt="Author"
+                  alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
                 />
