@@ -32,23 +32,16 @@ const Communication = () => {
             <p className="text-gray-600 dark:text-slate-300">Bachelor of Arts in Communication</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Large image cntainer on the left - takes 2 columns on desktop */}
             <div className="md:col-span-2">
-              {/* The image itself contains the text and logo */}
               <img
                 src={commOne || "/placeholder.svg"}
                 alt="Mandaluyong College of Science and Technology Communication students"
-                // Removed aspect-w/h. Using w-full h-full object-cover.
-                // Added a min-h for mobile to ensure visibility, and h-full for grid to manage.
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
               />
             </div>
-
-            {/* Two smaller images stacked on the right - takes 1 column on desktop */}
             <div className="space-y-4 flex flex-col">
-              {/* Small image 1 */}
-              <div className="flex-1"> {/* flex-1 allows it to take half the available vertical space */}
+              <div className="flex-1">
                 <img
                   src={commTwo || "/placeholder.svg"}
                   alt="Communication students working together"
@@ -56,9 +49,7 @@ const Communication = () => {
                   loading="lazy"
                 />
               </div>
-
-              {/* Small image 2 */}
-              <div className="flex-1"> {/* flex-1 allows it to take half the available vertical space */}
+              <div className="flex-1">
                 <img
                   src={commThree || "/placeholder.svg"}
                   alt="Communication students in group discussion"
