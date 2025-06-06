@@ -5,7 +5,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { useNavigate } from "react-router-dom"
 import heroImage from "../assets/images/hero-section.png"
-import ContactSection from "@/components/ContactSection"
+import ContactSection from "../components/ContactSection"
 
 const Programs = () => {
   useEffect(() => {
@@ -66,19 +66,6 @@ const Programs = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)] 
-                  bg-gray-400 dark:bg-zinc-800" // Added a fallback background color
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white mb-4 dark:text-slate-200 text-center">
-            Program Offerings
-          </h2>
-        </div>
-      </section>
-
       {/* Programs Section */}
       <section
         data-aos="zoom-in"

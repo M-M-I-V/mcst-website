@@ -3,7 +3,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import heroImage from "../assets/images/hero-section.png"
 import "../index.css"
 
 const Apply = () => {
@@ -16,18 +15,6 @@ const Apply = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)]"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white mb-4 dark:text-slate-200 text-center">
-            Mandaluyong College of Science and Technology Enrollment for 2nd Semester
-          </h2>
-        </div>
-      </section>
-
       {/* Enrollment Procedure Section */}
       <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200" className="py-8">
         <div className="container mx-auto px-6">

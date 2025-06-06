@@ -3,7 +3,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import heroImage from "../assets/images/hero-section.png"
 import statisticsImage from "../assets/images/statistics.jpg"
 import philosophyImage from "../assets/images/mcst-philosophy.jpg"
 import missionImage from "../assets/images/mcst-mission.jpg"
@@ -16,24 +15,12 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     })
   }, [])
 
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)]"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white mb-4 dark:text-slate-200 text-center">
-            About Mandaluyong College of Science and Technology
-          </h2>
-        </div>
-      </section>
-
       {/* Statistics Section */}
       <section
         data-aos="fade-up"
