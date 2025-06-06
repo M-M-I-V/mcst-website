@@ -45,7 +45,7 @@ const HomePage = () => {
             className="md:w-1/2 mt-8 md:mt-0 transition duration-200 dark:brightness-75 dark:contrast-125"
           >
             <img
-              src="/images/feature.jpg"
+              src="./images/feature.jpg"
               alt="Feature Image"
               className="w-full md:w-3/4 mx-auto rounded-lg"
               loading="lazy"
@@ -76,7 +76,7 @@ const HomePage = () => {
           >
             <div className="p-6 bg-white rounded-lg shadow-md dark:bg-zinc-800">
               <img
-                src="/images/collaboration.svg"
+                src="./images/collaboration.svg"
                 alt="Collaborating Icon"
                 className="h-16 w-16 mx-auto mb-4"
               />
@@ -93,7 +93,7 @@ const HomePage = () => {
               className="p-6 bg-white rounded-lg shadow-md dark:bg-zinc-800"
             >
               <img
-                src="/images/improve.svg"
+                src="./images/improve.svg"
                 alt="Continuous Improvement Icon"
                 className="h-16 w-16 mx-auto mb-4"
               />
@@ -110,7 +110,7 @@ const HomePage = () => {
               className="p-6 bg-white rounded-lg shadow-md dark:bg-zinc-800"
             >
               <img
-                src="/images/research.svg"
+                src="./images/research.svg"
                 alt="Research and Instruction Icon"
                 className="h-16 w-16 mx-auto mb-4"
               />

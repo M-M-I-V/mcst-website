@@ -117,7 +117,7 @@ const ContactSection = () => {
             className="hidden md:block bg-gray-200 rounded-lg transition duration-200 dark:brightness-75 dark:contrast-125"
           >
             <img
-              src="/public/images/feature.jpg"
+              src="./images/feature.jpg"
               alt="Admin Building Image"
               className="w-full h-full object-cover rounded-lg"
               loading="lazy"

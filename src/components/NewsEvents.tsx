@@ -85,7 +85,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
-                src="/images/public-ad.jpg"
+                src="./images/public-ad.jpg"
                 alt="Bachelor of Public Administration offering"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"

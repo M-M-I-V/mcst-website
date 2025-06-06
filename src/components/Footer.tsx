@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-blue-900 text-white py-8 dark:bg-blue-800 dark:text-slate-300">
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-6">
         <div className="mb-6 md:mb-0">
-          <img src="/images/mcst-logo.png" alt="MCST Logo" className="h-16 w-auto" />
+          <img src="./images/mcst-logo.png" alt="MCST Logo" className="h-16 w-auto" />
           <p className="mt-4">Address:</p>
           <p>Welfareville Compound, Barangay Addition Hills, Mandaluyong City 1550</p>
           <p className="mt-4">Contact:</p>
