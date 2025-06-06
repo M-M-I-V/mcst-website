@@ -4,12 +4,14 @@ import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useNavigate } from "react-router-dom"
+import heroImage from "../assets/images/hero-section.png"
+import ContactSection from "@/components/ContactSection"
 
 const Programs = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     })
   }, [])
 
@@ -60,12 +62,15 @@ const Programs = () => {
     },
   ]
 
+  console.log('Hero Image URL:', heroImage);
+
   return (
     <>
       {/* Hero Section */}
       <section
-        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)]"
-        style={{ backgroundImage: `url('/images/hero-section.png')` }}
+        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)] 
+                  bg-gray-400 dark:bg-zinc-800" // Added a fallback background color
+        style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
           <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white mb-4 dark:text-slate-200 text-center">
@@ -92,7 +97,7 @@ const Programs = () => {
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay={index * 100}
-                className="bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative"
+                className="flex flex-col justify-around bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative"
               >
                 {program.isNew && (
                   <span className="absolute top-4 right-4 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
@@ -149,30 +154,7 @@ const Programs = () => {
             ))}
           </div>
 
-          {/* Additional Information */}
-          <div className="mt-12 bg-white dark:bg-zinc-800 rounded-lg shadow-md p-6">
-            <h3 className="text-2xl font-semibold mb-4 dark:text-slate-200">Program Information</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-medium mb-2 text-blue-700 dark:text-blue-400">Admission Requirements</h4>
-                <ul className="text-sm text-gray-700 dark:text-slate-300 space-y-1">
-                  <li>• Minimum 85% General Weighted Average</li>
-                  <li>• Certified Resident of Mandaluyong</li>
-                  <li>• Senior High School Graduate or equivalent</li>
-                  <li>• Complete documentary requirements</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-2 text-blue-700 dark:text-blue-400">Academic Calendar</h4>
-                <ul className="text-sm text-gray-700 dark:text-slate-300 space-y-1">
-                  <li>• Semester-based academic year</li>
-                  <li>• 18-21 units per semester</li>
-                  <li>• Summer classes available</li>
-                  <li>• Flexible scheduling options</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <ContactSection />
 
           {/* Call to Action */}
           <div className="mt-8 text-center">

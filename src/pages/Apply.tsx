@@ -10,7 +10,7 @@ const Apply = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     })
   }, [])
 
@@ -18,7 +18,7 @@ const Apply = () => {
     <>
       {/* Hero Section */}
       <section
-        className="h-[600px] bg-cover bg-center pt-[calc(100px)]"
+        className="relative h-[600px] bg-cover bg-center pt-[calc(100px)]"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 sm:px-12">
