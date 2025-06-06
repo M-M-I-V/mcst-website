@@ -11,7 +11,7 @@ const NewsEvents = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false,
+      once: false, // Set to true if you want animations to run only once
     })
   }, [])
 
@@ -44,12 +44,14 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed aspect-w/h and added specific height */}
-            <div className="w-full h-48 bg-gray-200">
+            {/* Image Container - Removed fixed height, let image dictate height */}
+            <div className="w-full"> {/* Just make sure it takes full width */}
               <img
                 src={gradesImage || "/placeholder.svg"}
-                alt="Schedule of Releasing of Grade Slip" // More descriptive alt text
-                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                alt="Schedule of Releasing of Grade Slip"
+                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                // Changed h-48 to h-auto. Also added min-h-[250px] as a fallback for smaller images
+                // The actual height will be determined by the image's aspect ratio and w-full
                 loading="lazy"
               />
             </div>
@@ -63,7 +65,7 @@ const NewsEvents = () => {
               <div className="flex items-center mt-4 text-gray-500">
                 <img
                   src={mcstLogo || "/placeholder.svg"}
-                  alt="Mandaluyong College of Science and Technology Logo" // Descriptive alt text
+                  alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
                 />
@@ -84,12 +86,12 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed aspect-w/h and added specific height */}
-            <div className="w-full h-48 bg-gray-200">
+            {/* Image Container - Removed fixed height, let image dictate height */}
+            <div className="w-full">
               <img
                 src={publicAdImage || "/placeholder.svg"}
-                alt="Bachelor of Public Administration offering" // More descriptive alt text
-                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                alt="Bachelor of Public Administration offering"
+                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
               />
             </div>
@@ -124,13 +126,13 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed aspect-w/h and added specific height */}
-            <div className="w-full h-48 bg-gray-200">
+            {/* Image Container - Removed fixed height, let image dictate height */}
+            <div className="w-full">
               <img
                 src={peImage || "/placeholder.svg"}
-                alt="Bachelor of Physical Education offering" // More descriptive alt text
-                className="w-full h-full object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
-                loading="lazy" // Added loading="lazy" for consistency
+                alt="Bachelor of Physical Education offering"
+                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
+                loading="lazy"
               />
             </div>
             <div className="p-4">

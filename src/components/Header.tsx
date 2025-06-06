@@ -19,7 +19,7 @@ const Header = () => {
           <Link to="/">
             <img src={mcstLogo || "/placeholder.svg"} alt="MCST Logo" className="max-h-20 w-auto sm:max-h-16" />
           </Link>
-          <h1 className="text-lg sm:text-xl font-bold dark:text-slate-300">
+          <h1 className="text-base sm:text-lg md:text-xl font-bold dark:text-slate-300">
             Mandaluyong College of Science and Technology
           </h1>
         </div>

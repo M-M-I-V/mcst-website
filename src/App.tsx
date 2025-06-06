@@ -42,7 +42,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       {loading && <LoadingScreen />}
       <div className="font-sans bg-gray-50 text-gray-800 dark:bg-zinc-900 dark:text-slate-200 min-h-screen flex flex-col">
         <Header />

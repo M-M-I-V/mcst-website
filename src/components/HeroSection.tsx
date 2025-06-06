@@ -4,13 +4,13 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import heroImage from "../assets/images/hero-section.png"
+import droneImage from "../assets/images/mcst-drone.png"
 
 const HeroSection = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     })
   }, [])
 
@@ -32,12 +32,13 @@ const HeroSection = () => {
 
             <p className="text-base sm:text-lg text-gray-700 dark:text-slate-300 leading-relaxed max-w-2xl">
               At Mandaluyong College of Science and Technology, we are committed to nurturing excellence in education
-              and innovation. Our programs in Information Systems, Mathematics, and Communication are designed to equip
+              and innovation. Our programs in Information Systems, Mathematics, Communication, Public Administration, and Physical Education
+              are designed to equip
               students with the skills needed for a successful future.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link to="/apply">
+              <Link to="/admission">
                 <button className="bg-blue-900 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium text-base transition-colors duration-300">
                   Apply Now
                 </button>
@@ -60,7 +61,7 @@ const HeroSection = () => {
           >
             <div className="w-full h-[500px]">
               <img
-                src={heroImage || "/placeholder.svg"}
+                src={droneImage || "/placeholder.svg"}
                 alt="Mandaluyong College of Science and Technology campus and students"
                 className="w-full h-full object-cover rounded-lg shadow-lg transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
