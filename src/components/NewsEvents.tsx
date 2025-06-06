@@ -1,10 +1,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import gradesImage from "../assets/images/grades.jpg"
-import publicAdImage from "../assets/images/public-ad.jpg"
-import peImage from "../assets/images/pe.jpg"
-import mcstLogo from "../assets/images/mcst-logo.png"
 import "../index.css"
 
 const NewsEvents = () => {
@@ -47,7 +43,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full"> {/* Just make sure it takes full width */}
               <img
-                src={gradesImage || "/placeholder.svg"}
+                src="/images/grades.jpg"
                 alt="Schedule of Releasing of Grade Slip"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 // Changed h-48 to h-auto. Also added min-h-[250px] as a fallback for smaller images
@@ -64,7 +60,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500">
                 <img
-                  src={mcstLogo || "/placeholder.svg"}
+                  src="/images/mcst-logo.png"
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
@@ -89,7 +85,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
-                src={publicAdImage || "/placeholder.svg"}
+                src="/images/public-ad.jpg"
                 alt="Bachelor of Public Administration offering"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
@@ -106,7 +102,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
-                  src={mcstLogo || "/placeholder.svg"}
+                  src="/images/mcst-logo.png"
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
@@ -129,7 +125,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
-                src={peImage || "/placeholder.svg"}
+                src="/images/pe.jpg"
                 alt="Bachelor of Physical Education offering"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
@@ -146,7 +142,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
-                  src={mcstLogo || "/placeholder.svg"}
+                  src="/images/mcst-logo.png"
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"

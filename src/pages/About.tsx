@@ -3,12 +3,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import statisticsImage from "../assets/images/statistics.jpg"
-import philosophyImage from "../assets/images/mcst-philosophy.jpg"
-import missionImage from "../assets/images/mcst-mission.jpg"
-import visionImage from "../assets/images/mcst-vision.jpg"
-import valuesImage from "../assets/images/mcst-values.jpg"
-import goalsImage from "../assets/images/mcst-goals.jpg"
 import "../index.css"
 
 const About = () => {
@@ -53,7 +47,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 transition duration-200 dark:brightness-75 dark:contrast-125">
             <img
-              src={statisticsImage || "/placeholder.svg"}
+              src="/images/statistics.jpg"
               alt="Statistics Image"
               className="w-full rounded-lg shadow-md"
               loading="lazy"
@@ -82,7 +76,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src={philosophyImage || "/placeholder.svg"}
+              src="/images/mcst-philosophy.jpg"
               alt="Philosophy Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -111,7 +105,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src={missionImage || "/placeholder.svg"}
+              src="/images/mcst-mission.jpg"
               alt="Mission Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -139,7 +133,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src={visionImage || "/placeholder.svg"}
+              src="/images/mcst-vision.jpg"
               alt="Vision Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -160,7 +154,7 @@ const About = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6">
           <div className="order-1 md:order-2">
             <img
-              src={valuesImage || "/placeholder.svg"}
+              src="/images/mcst-values.jpg"
               alt="Core Values Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -208,7 +202,7 @@ const About = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6">
           <div className="order-1 md:order-2">
             <img
-              src={goalsImage || "/placeholder.svg"}
+              src="/images/mcst-goals.jpg"
               alt="Goals Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"

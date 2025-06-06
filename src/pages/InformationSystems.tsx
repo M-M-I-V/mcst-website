@@ -3,10 +3,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import ISOne from "../assets/images/is-one.jpg"
-import ISTwo from "../assets/images/is-two.jpg"
-import ISThree from "../assets/images/is-three.jpg"
-
 
 const InformationSystems = () => {
   useEffect(() => {
@@ -35,7 +31,7 @@ const InformationSystems = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src={ISOne || "/placeholder.svg?height=400&width=600"}
+                src="/images/is-one.jpg"
                 alt="Information Systems students working with technology"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -44,7 +40,7 @@ const InformationSystems = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src={ISTwo || "/placeholder.svg?height=200&width=300"} 
+                  src="/images/is-two.jpg"
                   alt="Information Systems students in computer lab"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -52,7 +48,7 @@ const InformationSystems = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src={ISThree || "/placeholder.svg?height=200&width=300"}
+                  src="/images/is-three.jpg"
                   alt="Information Systems students collaborating on projects"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"

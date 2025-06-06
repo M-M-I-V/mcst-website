@@ -4,7 +4,6 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import droneImage from "../assets/images/mcst-drone.png"
 
 const HeroSection = () => {
   useEffect(() => {
@@ -61,7 +60,7 @@ const HeroSection = () => {
           >
             <div className="w-full h-[500px]">
               <img
-                src={droneImage || "/placeholder.svg"}
+                src="/images/mcst-drone.png"
                 alt="Mandaluyong College of Science and Technology campus and students"
                 className="w-full h-full object-cover rounded-lg shadow-lg transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"

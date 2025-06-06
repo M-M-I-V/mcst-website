@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import mcstLogo from "../assets/images/mcst-logo.png"
 import "../index.css"
 
 const Header = () => {
@@ -17,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src={mcstLogo || "/placeholder.svg"} alt="MCST Logo" className="max-h-20 w-auto sm:max-h-16" />
+            <img src="/images/mcst-logo.png" alt="MCST Logo" className="max-h-20 w-auto sm:max-h-16" />
           </Link>
           <h1 className="text-base sm:text-lg md:text-xl font-bold dark:text-slate-300">
             Mandaluyong College of Science and Technology

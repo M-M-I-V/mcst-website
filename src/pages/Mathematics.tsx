@@ -3,9 +3,6 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import mathOne from "../assets/images/math-one.jpg"
-import mathTwo from "../assets/images/math-two.jpg"
-import mathThree from "../assets/images/math-three.jpg"
 
 const Mathematics = () => {
   useEffect(() => {
@@ -34,7 +31,7 @@ const Mathematics = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src={mathOne || "/placeholder.svg"}
+                src="/images/math-one.jpg"
                 alt="Mathematics students working on problem-solving"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -43,7 +40,7 @@ const Mathematics = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src={mathTwo || "/placeholder.svg"}
+                  src="/images/math-two.jpg"
                   alt="Mathematics students in classroom discussion"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -51,7 +48,7 @@ const Mathematics = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src={mathThree || "/placeholder.svg"}
+                  src="/images/math-three.jpg"
                   alt="Mathematics students collaborating on projects"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"

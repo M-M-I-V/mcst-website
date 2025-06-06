@@ -4,7 +4,6 @@ import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useNavigate } from "react-router-dom"
-import heroImage from "../assets/images/hero-section.png"
 import ContactSection from "../components/ContactSection"
 
 const Programs = () => {
@@ -61,8 +60,6 @@ const Programs = () => {
       isNew: true,
     },
   ]
-
-  console.log('Hero Image URL:', heroImage);
 
   return (
     <>
