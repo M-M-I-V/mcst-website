@@ -51,7 +51,7 @@ function App() {
             <Route path="/programs" element={<Programs />} />
             <Route path="/admission" element={<Admission />} />
             <Route path="/apply" element={<Apply />} />
-            <Route path="/communication" element={<Communication />} />
+            <Route path="programs/ba-communication" element={<Communication />} />
           </Routes>
         </main>
         <Footer />

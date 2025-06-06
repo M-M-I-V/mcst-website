@@ -22,7 +22,7 @@ const Programs = () => {
         "Develop strong communication skills across various media platforms and prepare for careers in journalism, public relations, broadcasting, and digital media.",
       duration: "4 years",
       strand: "All Strands",
-      link: "/communication",
+      link: "/programs/ba-communication",
     },
     {
       title: "Bachelor of Science in Information Systems",
