@@ -39,11 +39,6 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link to="/admission">
-                <button className="bg-blue-900 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium text-base transition-colors duration-300">
-                  Apply Now
-                </button>
-              </Link>
               <Link to="/programs">
                 <button className="border-2 border-gray-800 dark:border-slate-200 text-gray-800 dark:text-slate-200 hover:bg-gray-800 hover:text-white dark:hover:bg-slate-200 dark:hover:text-gray-800 px-6 py-3 rounded-lg font-medium text-base transition-colors duration-300">
                   Explore Programs →
@@ -60,11 +55,11 @@ const HeroSection = () => {
             data-aos-offset="200"
             className="relative"
           >
-            <div className="w-full h-[500px]">
+            <div className="w-full h-[500px] overflow-hidden rounded-lg shadow-lg">
               <img
                 src={`${basePath}/images/mcst-drone.png`}
                 alt="Mandaluyong College of Science and Technology campus and students"
-                className="w-full h-full object-cover rounded-lg shadow-lg transition duration-200 dark:brightness-75 dark:contrast-125"
+                className="w-full h-full object-cover rounded-lg shadow-lg hover:scale-110 transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
               />
             </div>
@@ -81,20 +76,47 @@ const HeroSection = () => {
         className="container mx-auto px-6 sm:px-12 lg:px-16 mt-16"
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {/* Students Enrolled */}
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-400">420+</div>
+            <div className="relative inline-block group">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
+                420+
+              </div>
+              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+            </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Students Enrolled</div>
           </div>
+
+          {/* Faculty Members */}
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-400">20+</div>
+            <div className="relative inline-block group">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
+                20+
+              </div>
+              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+            </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Faculty Members</div>
           </div>
+
+          {/* Degree Programs */}
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-400">5</div>
+            <div className="relative inline-block group">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
+                5
+              </div>
+              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+            </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Degree Programs</div>
           </div>
+
+          {/* Commitment to Excellence */}
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-400">100%</div>
+            <div className="relative inline-block group">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
+                100%
+              </div>
+              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+            </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Commitment to Excellence</div>
           </div>
         </div>
