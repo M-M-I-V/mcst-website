@@ -2,11 +2,15 @@
 
 import { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import HomePage from "./pages/HomePage"
 import ThemeToggle from "./components/ThemeToggle"
 import LoadingScreen from "./components/LoadingScreen"
+
 import About from "./pages/About"
 import Programs from "./pages/Programs"
 import Admission from "./pages/Admission"
@@ -20,6 +24,11 @@ function App() {
   const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") === "true")
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+
     // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false)
@@ -42,7 +51,7 @@ function App() {
   }
 
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router basename="/mcst-website-build" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       {loading && <LoadingScreen />}
       <div className="font-sans bg-gray-50 text-gray-800 dark:bg-zinc-900 dark:text-slate-200 min-h-screen flex flex-col">
         <Header />

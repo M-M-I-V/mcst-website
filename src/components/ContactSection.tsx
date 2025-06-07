@@ -11,6 +11,8 @@ const ContactSection = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <section className="py-16 bg-gray-50 dark:bg-zinc-900">
       <div className="container mx-auto px-6">
@@ -117,7 +119,7 @@ const ContactSection = () => {
             className="hidden md:block bg-gray-200 rounded-lg transition duration-200 dark:brightness-75 dark:contrast-125"
           >
             <img
-              src="./images/feature.jpg"
+              src={`${basePath}/images/feature.jpg`}
               alt="Admin Building Image"
               className="w-full h-full object-cover rounded-lg"
               loading="lazy"

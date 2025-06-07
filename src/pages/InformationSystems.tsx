@@ -12,6 +12,8 @@ const InformationSystems = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <>
       {/* Campus Gallery Section */}
@@ -31,7 +33,7 @@ const InformationSystems = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src="./images/is-one.jpg"
+                src={`${basePath}/images/is-one.jpg`}
                 alt="Information Systems students working with technology"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -40,7 +42,7 @@ const InformationSystems = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src="./images/is-two.jpg"
+                  src={`${basePath}/images/is-two.jpg`}
                   alt="Information Systems students in computer lab"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -48,7 +50,7 @@ const InformationSystems = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src="./images/is-three.jpg"
+                  src={`${basePath}/images/is-three.jpg`}
                   alt="Information Systems students collaborating on projects"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"

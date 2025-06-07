@@ -1,14 +1,20 @@
 "use client"
 
 import { useState } from "react"
-import { Link } from "react-router-dom"
-import "../index.css"
+import { Link, useLocation } from "react-router-dom"
+import "../index.css" // Ensure Tailwind CSS is imported
 
 const Header = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
+  const basePath = "/mcst-website-build"
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen)
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const isActive = (path: string) => {
+    return location.pathname === path
   }
 
   return (
@@ -16,32 +22,43 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src="./images/mcst-logo.png" alt="MCST Logo" className="max-h-20 w-auto sm:max-h-16" />
+            <img
+              src={`${basePath}/images/mcst-logo.png`}
+              alt="MCST Logo"
+              className="max-h-20 w-auto sm:max-h-16"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement
+                target.src = "https://placehold.co/80x80/1e3a8a/ffffff?text=MCST"
+              }}
+            />
           </Link>
-          <h1 className="text-base sm:text-lg md:text-xl font-bold dark:text-slate-300">
-            Mandaluyong College of Science and Technology
-          </h1>
+          <Link to="/">
+            <h1 className="text-lg sm:text-xl font-bold dark:text-slate-300">
+              Mandaluyong College of Science and Technology
+            </h1>
+          </Link>
         </div>
+
         <nav className="hidden md:flex space-x-4">
-          <Link to="/about" className="hover:text-yellow-400">
+          <Link to="/about" className={`hover:text-yellow-400 ${isActive("/about") ? "text-yellow-400" : ""}`}>
             About Us
           </Link>
-          <Link to="/programs" className="hover:text-yellow-400">
+          <Link to="/programs" className={`hover:text-yellow-400 ${isActive("/programs") ? "text-yellow-400" : ""}`}>
             Programs Offered
           </Link>
-          <Link to="/admission" className="hover:text-yellow-400">
+          <Link to="/admission" className={`hover:text-yellow-400 ${isActive("/admission") ? "text-yellow-400" : ""}`}>
             Admissions Info
           </Link>
-          <Link to="/apply" className="hover:text-yellow-400">
+          <Link to="/apply" className={`hover:text-yellow-400 ${isActive("/apply") ? "text-yellow-400" : ""}`}>
             Apply
           </Link>
         </nav>
+
         <button
           className="md:hidden text-white dark:text-slate-300"
-          onClick={toggleMobileMenu}
+          onClick={toggleMenu}
           aria-label="Toggle Navigation"
           aria-controls="mobile-menu"
-          aria-expanded={mobileMenuOpen}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,22 +71,41 @@ const Header = () => {
           </svg>
         </button>
       </div>
-      <div id="mobile-menu" className={`${mobileMenuOpen ? "block" : "hidden"} md:hidden`}>
-        <nav className="bg-blue-800 p-4 space-y-2">
-          <Link to="/about" className="block text-white hover:text-yellow-400 dark:text-slate-300">
-            About Us
-          </Link>
-          <Link to="/programs" className="block text-white hover:text-yellow-400 dark:text-slate-300">
-            Programs Offered
-          </Link>
-          <Link to="/admission" className="block text-white hover:text-yellow-400 dark:text-slate-300">
-            Admissions Info
-          </Link>
-          <Link to="/apply" className="block text-white hover:text-yellow-400 dark:text-slate-300">
-            Apply
-          </Link>
-        </nav>
-      </div>
+
+      {isMenuOpen && (
+        <div className="md:hidden">
+          <nav className="bg-blue-800 p-4 space-y-2">
+            <Link
+              to="/about"
+              className={`block text-white hover:text-yellow-400 dark:text-slate-300 ${isActive("/about") ? "text-yellow-400" : ""}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </Link>
+            <Link
+              to="/programs"
+              className={`block text-white hover:text-yellow-400 dark:text-slate-300 ${isActive("/programs") ? "text-yellow-400" : ""}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Programs Offered
+            </Link>
+            <Link
+              to="/admission"
+              className={`block text-white hover:text-yellow-400 dark:text-slate-300 ${isActive("/admission") ? "text-yellow-400" : ""}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Admissions Info
+            </Link>
+            <Link
+              to="/apply"
+              className={`block text-white hover:text-yellow-400 dark:text-slate-300 ${isActive("/apply") ? "text-yellow-400" : ""}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Apply
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }

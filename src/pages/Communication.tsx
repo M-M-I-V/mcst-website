@@ -12,6 +12,8 @@ const Communication = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <>
       {/* Campus Gallery Section */}
@@ -31,7 +33,7 @@ const Communication = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src="./images/comm-one.jpg"
+                src={`${basePath}/images/comm-one.jpg`}
                 alt="Mandaluyong College of Science and Technology Communication students"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -40,7 +42,7 @@ const Communication = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src="./images/comm-two.jpg"
+                  src={`${basePath}/images/comm-two.jpg`}
                   alt="Communication students working together"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -48,7 +50,7 @@ const Communication = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src="./images/comm-three.jpg"
+                  src={`${basePath}/images/comm-three.jpg`}
                   alt="Communication students in group discussion"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"

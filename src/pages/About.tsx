@@ -13,6 +13,8 @@ const About = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <>
       {/* Statistics Section */}
@@ -47,7 +49,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 transition duration-200 dark:brightness-75 dark:contrast-125">
             <img
-              src="./images/statistics.jpg"
+              src={`${basePath}/images/statistics.jpg`}
               alt="Statistics Image"
               className="w-full rounded-lg shadow-md"
               loading="lazy"
@@ -76,7 +78,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="./images/mcst-philosophy.jpg"
+              src={`${basePath}/images/mcst-philosophy.jpg`}
               alt="Philosophy Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -105,7 +107,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="./images/mcst-mission.jpg"
+              src={`${basePath}/images/mcst-mission.jpg`}
               alt="Mission Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -133,7 +135,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="./images/mcst-vision.jpg"
+              src={`${basePath}/images/mcst-vision.jpg`}
               alt="Vision Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -154,7 +156,7 @@ const About = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6">
           <div className="order-1 md:order-2">
             <img
-              src="./images/mcst-values.jpg"
+              src={`${basePath}/images/mcst-values.jpg`}
               alt="Core Values Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"
@@ -202,7 +204,7 @@ const About = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6">
           <div className="order-1 md:order-2">
             <img
-              src="./images/mcst-goals.jpg"
+              src={`${basePath}/images/mcst-goals.jpg`}
               alt="Goals Image"
               className="w-full rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125"
               loading="lazy"

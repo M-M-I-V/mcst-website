@@ -11,6 +11,8 @@ const NewsEvents = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <section id="blog" className="py-12 bg-gray-50 dark:bg-zinc-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +45,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full"> {/* Just make sure it takes full width */}
               <img
-                src="/images/grades.jpg"
+                src={`${basePath}/images/grades.jpg`}
                 alt="Schedule of Releasing of Grade Slip"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 // Changed h-48 to h-auto. Also added min-h-[250px] as a fallback for smaller images
@@ -60,7 +62,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500">
                 <img
-                  src="/images/mcst-logo.png"
+                  src={`${basePath}/images/mcst-logo.png`}
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
@@ -85,7 +87,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
-                src="./images/public-ad.jpg"
+                src={`${basePath}/images/public-ad.jpg`}
                 alt="Bachelor of Public Administration offering"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
@@ -102,7 +104,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
-                  src="/images/mcst-logo.png"
+                  src={`${basePath}/images/mcst-logo.png`}
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
@@ -125,7 +127,7 @@ const NewsEvents = () => {
             {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
-                src="/images/pe.jpg"
+                src={`${basePath}/images/pe.jpg`}
                 alt="Bachelor of Physical Education offering"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
@@ -142,7 +144,7 @@ const NewsEvents = () => {
 
               <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
                 <img
-                  src="/images/mcst-logo.png"
+                  src={`${basePath}/images/mcst-logo.png`}
                   alt="Mandaluyong College of Science and Technology Logo"
                   className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"

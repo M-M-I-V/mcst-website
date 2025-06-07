@@ -12,6 +12,8 @@ const Mathematics = () => {
     })
   }, [])
 
+  const basePath = "/mcst-website-build"
+
   return (
     <>
       {/* Campus Gallery Section */}
@@ -31,7 +33,7 @@ const Mathematics = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
               <img
-                src="./images/math-one.jpg"
+                src={`${basePath}/images/math-one.jpg`}
                 alt="Mathematics students working on problem-solving"
                 className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[300px] md:min-h-0"
                 loading="lazy"
@@ -40,7 +42,7 @@ const Mathematics = () => {
             <div className="space-y-4 flex flex-col">
               <div className="flex-1">
                 <img
-                  src="./images/math-two.jpg"
+                  src={`${basePath}/images/math-two.jpg`}
                   alt="Mathematics students in classroom discussion"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
@@ -48,7 +50,7 @@ const Mathematics = () => {
               </div>
               <div className="flex-1">
                 <img
-                  src="./images/math-three.jpg"
+                  src={`${basePath}/images/math-three.jpg`}
                   alt="Mathematics students collaborating on projects"
                   className="w-full h-full object-cover rounded-lg shadow-md transition duration-200 dark:brightness-75 dark:contrast-125 min-h-[200px] md:min-h-0"
                   loading="lazy"
