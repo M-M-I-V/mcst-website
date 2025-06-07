@@ -48,7 +48,10 @@ const ContactSection = () => {
                 <h3 className="text-xl font-semibold">Email</h3>
               </div>
               <p className="text-gray-700 dark:text-slate-300">Reach us anytime via email.</p>
-              <p className="text-blue-500 dark:text-blue-700">registrarsoffice@mcst.edu.ph</p>
+              <div className="relative inline-block group">
+                <p className="text-blue-500 hover:cursor-pointer transition duration-500 dark:text-blue-700">registrarsoffice@mcst.edu.ph</p>
+                <span className="absolute bottom-0 right-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              </div>
             </div>
 
             <div
@@ -76,7 +79,10 @@ const ContactSection = () => {
                 <h3 className="text-xl font-semibold">Phone</h3>
               </div>
               <p className="text-gray-700 dark:text-slate-300">Call us for immediate support.</p>
-              <p className="text-blue-500 dark:text-blue-700">(02) 87160352</p>
+              <div className="relative inline-block group">
+                <p className="text-blue-500 dark:text-blue-700 hover:cursor-pointer transition duration-500">(02) 87160352</p>
+                <span className="absolute bottom-0 right-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              </div>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="200">
