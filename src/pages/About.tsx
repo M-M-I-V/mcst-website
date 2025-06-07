@@ -13,7 +13,7 @@ const About = () => {
     })
   }, [])
 
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <>

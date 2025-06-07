@@ -5,16 +5,16 @@ npm run build
 
 # Commit and push
 git add .
-git commit -m "Added deploy script"
+git commit -m "Added some changes"
 git push origin master
 
 # Navigate to the deployment repo
-cd /home/mmiv/Downloads/mcst-website-build
+cd /home/mmiv/Home
 
 # Copy files
 cp -r /home/mmiv/Downloads/mcst-website/dist/* .
 
 # Commit and push
 git add .
-git commit -m "Added deploy script"
-git push origin master
+git commit -m "mcst v3.1"
+git push origin main

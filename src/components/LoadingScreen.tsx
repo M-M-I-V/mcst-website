@@ -2,7 +2,7 @@ import "../index.css"
 
 const LoadingScreen = () => {
 
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <div className="fixed inset-0 bg-blue-900 flex items-center justify-center z-50">

@@ -12,7 +12,7 @@ const Mathematics = () => {
     })
   }, [])
 
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <>

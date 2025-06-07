@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import "../index.css"
 
 const Footer = () => {
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <footer className="bg-blue-900 text-white py-8 dark:bg-blue-800 dark:text-slate-300">

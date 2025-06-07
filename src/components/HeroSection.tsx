@@ -13,7 +13,7 @@ const HeroSection = () => {
     })
   }, [])
 
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <section className="bg-gray-50 dark:bg-zinc-900 pt-8 pb-4">

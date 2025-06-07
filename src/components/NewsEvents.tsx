@@ -7,11 +7,11 @@ const NewsEvents = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false, // Set to true if you want animations to run only once
+      once: false,
     })
   }, [])
 
-  const basePath = "/mcst-website-build"
+  const basePath = "/Home"
 
   return (
     <section id="blog" className="py-12 bg-gray-50 dark:bg-zinc-900">
@@ -37,7 +37,7 @@ const NewsEvents = () => {
         >
           {/* Card 1: Releasing of Grade Slip */}
           <a
-            href="https://www.facebook.com/share/p/1DcaiN5EFT/"
+            href="https://www.facebook.com/share/p/1ApNwESsTN/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
@@ -79,7 +79,7 @@ const NewsEvents = () => {
 
           {/* Card 2: Bachelor of Public Administration */}
           <a
-            href="https://www.facebook.com/share/p/15BEth4yLm/"
+            href="https://www.facebook.com/share/p/1ErAgQujM1/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
@@ -119,7 +119,7 @@ const NewsEvents = () => {
 
           {/* Card 3: Bachelor of Physical Education */}
           <a
-            href="https://www.facebook.com/share/p/1CLcKp3Xzc/"
+            href="https://www.facebook.com/share/p/1DnGrjjwRq/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
