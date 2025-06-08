@@ -47,7 +47,7 @@ const Programs = () => {
         "Prepare for leadership roles in government and public service, focusing on policy analysis, public management, and civic engagement.",
       duration: "4 years",
       strand: "All Strands",
-      link: "/programs/b-public-administration", // Future implementation
+      link: "/programs/b-public-administration",
       isNew: true,
     },
     {
@@ -56,7 +56,7 @@ const Programs = () => {
         "Develop expertise in physical fitness, sports science, and health education to become effective physical education teachers and fitness professionals.",
       duration: "4 years",
       strand: "All Strands",
-      link: "/programs/b-physical-education", // Future implementation
+      link: "/programs/b-physical-education",
       isNew: true,
     },
   ]
@@ -151,13 +151,13 @@ const Programs = () => {
                     "_blank",
                   )
                 }
-                className="bg-blue-900 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
+                className="bg-blue-900 hover:bg-blue-800 text-white hover:text-yellow-400 dark:bg-blue-800 dark:hover:bg-blue-700 py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
               >
                 Apply Now
               </button>
               <button
                 onClick={() => navigate("/admission")}
-                className="border border-blue-900 dark:border-blue-600 text-blue-900 dark:text-blue-400 hover:bg-blue-900 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
+                className="border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black py-3 px-6 rounded-lg transition-colors duration-200 font-medium"
               >
                 Learn More About Admissions
               </button>
