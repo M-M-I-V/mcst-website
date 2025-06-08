@@ -248,7 +248,7 @@ const Admission = () => {
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold mb-2">Still have questions?</h3>
             <p className="text-gray-600 mb-4 dark:text-slate-200">Reach out to us for more information.</p>
-            <button className="bg-blue-900 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow dark:bg-blue-800 hover:bg-blue-800 dark:hover:bg-blue-700 transition-colors">
+            <button className="bg-blue-900 text-white py-2 px-4 rounded-sm shadow dark:bg-blue-800 hover:bg-blue-800 hover:text-yellow-400 dark:hover:bg-blue-700 transition-colors">
               Contact
             </button>
           </div>
