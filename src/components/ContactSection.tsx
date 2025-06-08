@@ -122,12 +122,12 @@ const ContactSection = () => {
             data-aos-duration="1000"
             data-aos-delay="500"
             data-aos-offset="200"
-            className="hidden md:block bg-gray-200 rounded-lg transition duration-200 dark:brightness-75 dark:contrast-125"
+            className="hidden md:block bg-gray-200 rounded-lg overflow-hidden transition duration-200 dark:brightness-75 dark:contrast-125"
           >
             <img
               src={`${basePath}/images/office.jpg`}
               alt="Admin Building Image"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105"
               loading="lazy"
             />
           </div>
