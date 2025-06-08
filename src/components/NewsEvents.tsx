@@ -5,13 +5,43 @@ import "../index.css"
 
 const NewsEvents = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
+    AOS.init({ 
+      duration: 1000, 
+      once: false 
     })
   }, [])
 
   const basePath = "/Home"
+
+  const newsItems = [
+    {
+      href: "https://www.facebook.com/share/p/1ApNwESsTN/",
+      image: "grades.jpg",
+      alt: "Schedule of Releasing of Grade Slip",
+      type: "Announcement",
+      title: "Releasing of Grade Slip",
+      description: "Schedule of releasing of grade slip of 1st and 2nd year students.",
+      date: "May 30, 2025",
+    },
+    {
+      href: "https://www.facebook.com/share/p/1ErAgQujM1/",
+      image: "public-ad.jpg",
+      alt: "Bachelor of Public Administration offering",
+      type: "Announcement",
+      title: "Bachelor of Public Administration",
+      description: "Mandaluyong College of Science and Technology now offers Bachelor of Public Administration.",
+      date: "May 28, 2025",
+    },
+    {
+      href: "https://www.facebook.com/share/p/1DnGrjjwRq/",
+      image: "pe.jpg",
+      alt: "Bachelor of Physical Education offering",
+      type: "Announcement",
+      title: "Bachelor of Physical Education",
+      description: "Mandaluyong College of Science and Technology now offers Bachelor of Physical Education.",
+      date: "May 23, 2025",
+    },
+  ]
 
   return (
     <section id="blog" className="py-12 bg-gray-50 dark:bg-zinc-900">
@@ -35,122 +65,42 @@ const NewsEvents = () => {
           data-aos-offset="200"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {/* Card 1: Releasing of Grade Slip */}
-          <a
-            href="https://www.facebook.com/share/p/1ApNwESsTN/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
-          >
-            <div className="w-full">
-              <img
-                src={`${basePath}/images/grades.jpg`}
-                alt="Schedule of Releasing of Grade Slip"
-                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-4">
-              <p className="text-xs font-medium text-gray-500 dark:text-slate-300">Announcement</p>
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-200">Releasing of Grade Slip</h3>
-              <p className="text-xs text-gray-600 dark:text-slate-300">
-                Schedule of releasing of grade slip of 1st and 2nd year students.
-              </p>
-
-              <div className="flex items-center mt-4 text-gray-500">
+          {newsItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
+            >
+              <div className="w-full">
                 <img
-                  src={`${basePath}/images/mcst-logo.png`}
-                  alt="Mandaluyong College of Science and Technology Logo"
-                  className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
+                  src={`${basePath}/images/${item.image}`}
+                  alt={item.alt}
+                  className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
                   loading="lazy"
                 />
-                <div>
-                  <p className="text-xs font-medium dark:text-slate-300">
-                    Mandaluyong College of Science and Technology
-                  </p>
-                  <p className="text-xs dark:text-slate-300">May 30, 2025 · 1 min read</p>
+              </div>
+              <div className="p-4">
+                <p className="text-xs font-medium text-gray-500 dark:text-slate-300">{item.type}</p>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-200">{item.title}</h3>
+                <p className="text-xs text-gray-600 dark:text-slate-300">{item.description}</p>
+
+                <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
+                  <img
+                    src={`${basePath}/images/mcst-logo.png`}
+                    alt="Mandaluyong College of Science and Technology Logo"
+                    className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
+                    loading="lazy"
+                  />
+                  <div>
+                    <p className="text-xs font-medium">Mandaluyong College of Science and Technology</p>
+                    <p className="text-xs">{item.date} · 1 min read</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-
-          {/* Card 2: Bachelor of Public Administration */}
-          <a
-            href="https://www.facebook.com/share/p/1ErAgQujM1/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
-          >
-            <div className="w-full">
-              <img
-                src={`${basePath}/images/public-ad.jpg`}
-                alt="Bachelor of Public Administration offering"
-                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-4">
-              <p className="text-xs font-medium text-gray-500 dark:text-slate-300">Announcement</p>
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-200">
-                Bachelor of Public Administration
-              </h3>
-              <p className="text-xs text-gray-600 dark:text-slate-300">
-                Mandaluyong College of Science and Technology now offers Bachelor of Public Administration.
-              </p>
-
-              <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
-                <img
-                  src={`${basePath}/images/mcst-logo.png`}
-                  alt="Mandaluyong College of Science and Technology Logo"
-                  className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
-                  loading="lazy"
-                />
-                <div>
-                  <p className="text-xs font-medium">Mandaluyong College of Science and Technology</p>
-                  <p className="text-xs">May 28, 2025 · 1 min read</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          {/* Card 3: Bachelor of Physical Education */}
-          <a
-            href="https://www.facebook.com/share/p/1DnGrjjwRq/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
-          >
-            <div className="w-full">
-              <img
-                src={`${basePath}/images/pe.jpg`}
-                alt="Bachelor of Physical Education offering"
-                className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
-                loading="lazy"
-              />
-            </div>
-            <div className="p-4">
-              <p className="text-xs font-medium text-gray-500 dark:text-slate-300">Announcement</p>
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-200">
-                Bachelor of Physical Education
-              </h3>
-              <p className="text-xs text-gray-600 dark:text-slate-300">
-                "Mandaluyong College of Science and Technology now offers Bachelor of Physical Education."
-              </p>
-
-              <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
-                <img
-                  src={`${basePath}/images/mcst-logo.png`}
-                  alt="Mandaluyong College of Science and Technology Logo"
-                  className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
-                  loading="lazy"
-                />
-                <div>
-                  <p className="text-xs font-medium">Mandaluyong College of Science and Technology</p>
-                  <p className="text-xs">May 23, 2025 · 1 min read</p>
-                </div>
-              </div>
-            </div>
-          </a>
+            </a>
+          ))}
         </div>
 
         <div className="text-center mt-6">
