@@ -21,8 +21,9 @@ const HomePage = () => {
     <>
       <HeroSection />
 
-      <section className="py-16">
+      <section className="py-16 px-auto">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+          {/* Text Section */}
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -39,18 +40,20 @@ const HomePage = () => {
               leaders.
             </p>
           </div>
+
+          {/* Image Section with Zoom Effect */}
           <div
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
             data-aos-offset="200"
-            className="md:w-full mt-8 md:mt-0 transition duration-200 dark:brightness-75 dark:contrast-125"
+            className="md:w-1/2 mt-8 md:mt-0 transition duration-200 dark:brightness-75 dark:contrast-125"
           >
-            <div className="w-3/4 mx-auto overflow-hidden rounded-lg shadow-lg relative">
+            <div className="w-full md:w-3/4 mx-auto overflow-hidden rounded-lg">
               <img
                 src={`${basePath}/images/feature.jpg`}
                 alt="Feature Image"
-                className="w-full mx-auto rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-110 dark:brightness-75 dark:contrast-125"
+                className="w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-110 dark:brightness-75 dark:contrast-125"
                 loading="lazy"
               />
             </div>

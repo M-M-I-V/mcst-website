@@ -50,7 +50,7 @@ const ContactSection = () => {
               <p className="text-gray-700 dark:text-slate-300">Reach us anytime via email.</p>
               <div className="relative inline-block group">
                 <p className="text-blue-500 hover:cursor-pointer transition duration-500 dark:text-blue-700">registrarsoffice@mcst.edu.ph</p>
-                <span className="absolute bottom-0 right-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
               </div>
             </div>
 
@@ -81,7 +81,7 @@ const ContactSection = () => {
               <p className="text-gray-700 dark:text-slate-300">Call us for immediate support.</p>
               <div className="relative inline-block group">
                 <p className="text-blue-500 dark:text-blue-700 hover:cursor-pointer transition duration-500">(02) 87160352</p>
-                <span className="absolute bottom-0 right-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 bg-blue-500 dark:bg-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const ContactSection = () => {
             className="hidden md:block bg-gray-200 rounded-lg transition duration-200 dark:brightness-75 dark:contrast-125"
           >
             <img
-              src={`${basePath}/images/feature.jpg`}
+              src={`${basePath}/images/office.jpg`}
               alt="Admin Building Image"
               className="w-full h-full object-cover rounded-lg"
               loading="lazy"

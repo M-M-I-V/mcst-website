@@ -27,10 +27,9 @@ const HeroSection = () => {
             data-aos-offset="200"
             className="space-y-6"
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-slate-200 leading-tight">
-              Empowering Futures Through Science and Technology
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight dark:text-slate-200">
+            Empowering Futures Through Science and Technology
             </h1>
-
             <p className="text-base sm:text-lg text-gray-700 dark:text-slate-300 leading-relaxed max-w-2xl">
               At Mandaluyong College of Science and Technology, we are committed to nurturing excellence in education
               and innovation. Our programs in Information Systems, Mathematics, Communication, Public Administration, and Physical Education
@@ -82,7 +81,7 @@ const HeroSection = () => {
               <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
                 420+
               </div>
-              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Students Enrolled</div>
           </div>
@@ -93,7 +92,7 @@ const HeroSection = () => {
               <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
                 20+
               </div>
-              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Faculty Members</div>
           </div>
@@ -104,7 +103,7 @@ const HeroSection = () => {
               <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
                 5
               </div>
-              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Degree Programs</div>
           </div>
@@ -115,7 +114,7 @@ const HeroSection = () => {
               <div className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-blue-800 transition duration-700 ease-in-out">
                 100%
               </div>
-              <span className="absolute bottom-0 right-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-right"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-slate-300">Commitment to Excellence</div>
           </div>
