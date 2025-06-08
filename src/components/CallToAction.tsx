@@ -39,12 +39,12 @@ const CallToAction = () => {
           className="md:w-1/2 flex flex-col md:flex-row md:justify-end space-y-4 md:space-y-0 md:space-x-4"
         >
           <Link to="/apply">
-            <button className="bg-blue-900 text-white py-3 px-6 rounded-lg transition duration-300 dark:bg-blue-800 dark:text-slate-200 w-full md:w-auto">
+            <button className="bg-blue-900 hover:bg-blue-800 text-white hover:text-yellow-400 py-3 px-6 rounded-lg dark:bg-blue-800 dark:hover:bg-blue-700 dark:text-slate-200 transition duration-300 w-full md:w-auto">
               Apply
             </button>
           </Link>
           <Link to="/admission">
-            <button className="border border-black text-black py-3 px-6 rounded-lg transition duration-300 dark:border-slate-200 dark:text-slate-200 w-full md:w-auto">
+            <button className="border border-black text-black hover:border-white hover:bg-zinc-900 hover:text-white py-3 px-6 rounded-lg dark:border-slate-200 dark:text-slate-200 dark:hover:bg-slate-100 dark:hover:text-black transition duration-300 w-full md:w-auto">
               Learn More
             </button>
           </Link>

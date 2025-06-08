@@ -42,14 +42,11 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed fixed height, let image dictate height */}
-            <div className="w-full"> {/* Just make sure it takes full width */}
+            <div className="w-full">
               <img
                 src={`${basePath}/images/grades.jpg`}
                 alt="Schedule of Releasing of Grade Slip"
                 className="w-full h-auto object-cover transition duration-200 dark:brightness-75 dark:contrast-125"
-                // Changed h-48 to h-auto. Also added min-h-[250px] as a fallback for smaller images
-                // The actual height will be determined by the image's aspect ratio and w-full
                 loading="lazy"
               />
             </div>
@@ -84,7 +81,6 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
                 src={`${basePath}/images/public-ad.jpg`}
@@ -124,7 +120,6 @@ const NewsEvents = () => {
             rel="noopener noreferrer"
             className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
           >
-            {/* Image Container - Removed fixed height, let image dictate height */}
             <div className="w-full">
               <img
                 src={`${basePath}/images/pe.jpg`}
@@ -163,7 +158,7 @@ const NewsEvents = () => {
             href="https://www.facebook.com/MandaluyongCST"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow hover:bg-blue-700 text-sm dark:bg-blue-800"
+            className="inline-block bg-blue-900 text-white hover:text-yellow-400 px-6 py-2 rounded-md shadow hover:bg-blue-800 text-sm dark:bg-blue-800 dark:hover:bg-blue-700 transition-colors duration-300"
           >
             View all
           </a>
