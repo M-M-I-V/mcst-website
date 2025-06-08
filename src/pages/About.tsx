@@ -36,11 +36,17 @@ const About = () => {
             </p>
             <div className="flex flex-col md:flex-row gap-8">
               <div className="text-center">
-                <h3 className="text-5xl font-bold text-blue-700 mb-2 dark:text-blue-500">420</h3>
+                <div className="relative inline-block group mb-1.5">
+                  <h3 className="text-5xl font-bold text-blue-900 mb-2 dark:text-blue-800">420+</h3>
+                  <span className="absolute bottom-0 left-0 h-1 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
+                </div>
                 <p className="text-gray-700 dark:text-slate-300">Students enrolled in diverse academic programs.</p>
               </div>
               <div className="text-center">
-                <h3 className="text-5xl font-bold text-blue-700 mb-2 dark:text-blue-500">20</h3>
+                <div className="relative inline-block group mb-1.5">
+                  <h3 className="text-5xl font-bold text-blue-900 mb-2 dark:text-blue-800">20+</h3>
+                  <span className="absolute bottom-0 left-0 h-1 bg-blue-900 dark:bg-blue-800 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left"></span>
+                </div>
                 <p className="text-gray-700 dark:text-slate-300">
                   Dedicated faculty and staff supporting student success.
                 </p>
