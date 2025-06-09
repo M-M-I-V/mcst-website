@@ -71,7 +71,7 @@ const NewsEvents = () => {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative block bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className="relative flex flex-col justify-between bg-white rounded-lg shadow-md overflow-hidden dark:bg-zinc-800 hover:shadow-lg transition-shadow duration-300 ease-in-out"
             >
               <div className="w-full">
                 <img
