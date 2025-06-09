@@ -5,6 +5,10 @@ const Footer = () => {
   const basePath = "/Home"
   const currentYear = new Date().getFullYear()
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   return (
     <footer className="bg-blue-900 text-white py-8 dark:bg-blue-800 dark:text-slate-300">
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-6">
@@ -17,7 +21,7 @@ const Footer = () => {
             />
           </Link>
           <p className="mt-4 font-bold">Address:</p>
-          <p>Welfareville Compound, Barangay Addition Hills, Mandaluyong City 1550</p>
+          <p>Welfareville Compound, Barangay Addition Hills,<br /> Mandaluyong City 1550</p>
           <p className="mt-4 font-bold">Contact:</p>
           <p>(02) 87160352</p>
           <p>registrarsoffice@mcst.edu.ph</p>
@@ -88,10 +92,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 mt-8">
+
+      {/* Bottom Section with Back to Top */}
+      <div className="py-4 mt-8 border-t border-blue-700 dark:border-blue-600">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
           <p className="text-gray-400">&copy; {currentYear} MCST. All rights reserved.</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-yellow-400">
               Privacy Policy
             </a>
@@ -101,6 +107,12 @@ const Footer = () => {
             <a href="#" className="text-gray-400 hover:text-yellow-400">
               Cookies Settings
             </a>
+            <button
+              onClick={scrollToTop}
+              className="text-gray-400 hover:text-yellow-400 underline hover:no-underline"
+            >
+              Back to top ↑
+            </button>
           </div>
         </div>
       </div>
