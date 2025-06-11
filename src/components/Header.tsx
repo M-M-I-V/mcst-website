@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import "../index.css" // Ensure Tailwind CSS is imported
+import "../index.css"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

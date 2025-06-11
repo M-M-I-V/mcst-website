@@ -61,6 +61,7 @@ const Apply = () => {
                   <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Date</th>
                   <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Time</th>
                   <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Year Level</th>
+                  <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Section</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,21 +70,64 @@ const Apply = () => {
                     June 16, 2025 to July 07, 2025
                   </td>
                   <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-5:00PM</td>
-                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1st Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 1st Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">-</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                    June 16, 2025 to June 18, 2025
+                    June 16, 2025
                   </td>
-                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-5:00PM</td>
-                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">2nd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-12:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 2nd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">ABCOMM11 & BSIS11</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                    June 19, 2025 to June 20, 2025
+                    June 16, 2025
                   </td>
-                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-5:00PM</td>
-                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">3rd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1:00PM-5:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 2nd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">ABCOMM12 & BSIS12</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                    June 17, 2025
+                  </td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-12:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 2nd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">ABCOMM13 & BSIS13</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                    June 17, 2025
+                  </td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1:00PM-5:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 3rd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">ABCOMM21 & BSIS21</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                    June 18, 2025
+                  </td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">8:00AM-12:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 3rd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">ABCOMM22 & BSIS22</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                    June 18, 2025
+                  </td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1:00PM-5:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 2nd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">BSMATH11</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                    June 18, 2025
+                  </td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1:00PM-5:00PM</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Incoming 3rd Year</td>
+                  <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">BSMATH21</td>
                 </tr>
               </tbody>
             </table>

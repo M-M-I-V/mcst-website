@@ -41,7 +41,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          {/* Image Section with Zoom Effect */}
+          {/* Image */}
           <div
             data-aos="fade-up"
             data-aos-duration="800"
