@@ -1,17 +1,18 @@
 # MCST Official Website
 
-This is the official website of **Mandaluyong College of Science and Technology (MCST)**. It was developed using a modern front-end tech stack, and is designed for clarity, responsiveness, and maintainability.
+This is the official website of **Mandaluyong College of Science and Technology (MCST)**.  
+It was developed using a modern front-end tech stack, and is designed for clarity, responsiveness, and maintainability.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **React + TypeScript** – Component-based UI development with static typing
-- **Vite** – Fast development and build tool
-- **Tailwind CSS** – Utility-first CSS framework
-- **Shadcn UI** – Accessible, headless UI components
-- **AOS (Animate on Scroll)** – Smooth scroll-based animations
-- **Git + GitHub** – Version control and deployment
+- **React + TypeScript** – Component-based UI development with static typing  
+- **Vite** – Fast development and build tool  
+- **Tailwind CSS** – Utility-first CSS framework  
+- **Shadcn UI** – Accessible, headless UI components  
+- **AOS (Animate on Scroll)** – Smooth scroll-based animations  
+- **Git + GitHub** – Version control and deployment  
 
 ---
 
@@ -22,24 +23,31 @@ This is the official website of **Mandaluyong College of Science and Technology 
 ```bash
 git clone https://github.com/YOUR-USERNAME/mcst-website.git
 cd mcst-website
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
+```bash
 npm install
+```
 
-3. Run in Development Mode
+### 3. Run in Development Mode
 
+```bash
 npm run dev
+```
 
-Open your browser and navigate to http://localhost:5173.
+Then open your browser and go to [http://localhost:5173](http://localhost:5173)
 
 ---
 
-🏗️ Build for Production
+### 🏗️ Build for Production
 
+```bash
 npm run build
+```
 
-The production-ready files will be generated in the dist/ folder.
+The production-ready files will be generated in the `dist/` folder.
 
 ---
 
@@ -53,120 +61,112 @@ You can set up the project in two ways:
 
 Best for development — full Git tracking.
 
-#### 📌 Initial Setup
-
-Open Git Bash and set your Git identity:
+#### 📌 Initial Setup (Run Once)
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
+git config --list  # optional: verify config
+```
 
-You can verify with:
+#### 🚀 Clone the Project
 
-git config --list
-
-🚀 Clone the Project
-
-1. Open Git Bash
-
-
-2. Navigate to your folder:
-
+```bash
 cd /c/Users/YourName/Documents
-
-
-3. Clone the repo:
-
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
 
+You're ready to use:
 
-✅ You can now use:
-
+```bash
 git pull
 git add .
 git commit -m "Your message"
 git push origin main  # or master
+```
 
 ---
 
-⚠️ Option 2: Download ZIP
+### ⚠️ Option 2: Download ZIP
 
-Good for quick viewing — not for active development.
+Good for viewing only — not ideal for development.
 
 Steps:
 
-1. Go to your GitHub repo
+1. Go to your GitHub repository  
+2. Click **Code > Download ZIP**  
+3. Extract the ZIP on your machine  
 
-2. Click Code > Download ZIP
+To enable Git tracking later:
 
-3. Extract the ZIP
-
-
-If you want to use Git commands later:
-
+```bash
 git init
 git remote add origin https://github.com/your-username/your-repo.git
+```
 
 ---
 
-🔀 If You Forked the Repo
+## 🔀 If You Forked the Repo
 
-✅ Fork + Clone (Recommended)
+### ✅ Fork + Clone (Recommended)
 
-1. Fork the repo on GitHub
-
-
+1. Fork the repo on GitHub  
 2. Clone your fork:
 
+```bash
 git clone https://github.com/your-username/the-repo.git
 cd the-repo
+```
 
+You're now ready to commit and push:
 
-You're ready to push:
-
+```bash
 git add .
 git commit -m "Changes"
 git push origin main
+```
 
----
+### ❌ Fork + Download ZIP
 
-❌ Fork + Download ZIP
+Just a code snapshot — no Git tracking.
 
-This gives you a code snapshot — no Git tracking. You’ll need to run:
+To track changes manually:
 
+```bash
 git init
 git remote add origin https://github.com/your-username/the-repo.git
+```
 
 ---
 
-👨‍🔧 Maintenance Guide
+## 👨‍🔧 Maintenance Guide
 
-Update content by editing files inside:
+To update website content:
 
-src/pages/ – for individual pages like About, Admission, Programs, etc.
+- Modify files in `src/pages/` for each page (e.g., About, Admission, Programs, etc.)  
+- Edit `src/components/` for reusable elements like the header, footer, and CTA
 
-src/components/ – for shared components like Header, Footer, CTA, etc.
+To apply changes:
 
+```bash
+npm run build
+```
 
-To reflect changes:
-
-1. Run npm run build
-
-2. Redeploy the contents of the dist/ folder
-
----
-
-🤝 Acknowledgments
-
-This project was created and maintained by Neil Jay Lacandazo, BS Information Systems student, as a contribution to the MCST community.
-
+Then redeploy the contents of the `dist/` folder.
 
 ---
 
-📞 Contact
+## 🤝 Acknowledgments
 
-For inquiries, technical assistance, or questions during the transition:
+This project was created and maintained by **Neil Jay Lacandazo**,  
+BS Information Systems student, as a contribution to the MCST community.
 
-Neil Jay Lacandazo
-Email: neiljay.lacandazo@mcst.edu.ph
+---
+
+## 📞 Contact
+
+For questions, technical assistance, or handover support:
+
+**Neil Jay Lacandazo**  
+📧 Email: neiljay.lacandazo@mcst.edu.ph
