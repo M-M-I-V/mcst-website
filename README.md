@@ -17,7 +17,49 @@ This is the official website of **Mandaluyong College of Science and Technology 
 
 ## 📁 Project Structure
 
-mcst-website/ ├── public/ │   ├── images/               # Static image assets used across pages │   └── 404.html              # Custom 404 page for broken links ├── src/ │   ├── components/           # Reusable UI components (header, footer, etc.) │   ├── lib/                  # Utility functions │   ├── pages/                # Top-level pages of the website │   ├── types/                # Type declarations (e.g. for AOS) │   ├── App.tsx               # Root component │   ├── index.css             # Global styles │   ├── main.tsx              # App entry point │   └── vite-env.d.ts         # Vite environment types ├── .gitignore ├── components.json           # UI configuration (for shadcn or custom tooling) ├── deploy.sh                 # Optional script for deployment ├── eslint.config.js          # ESLint configuration ├── index.html                # HTML entry point for Vite ├── package.json              # Project metadata and scripts ├── package-lock.json         # Lock file for dependencies ├── tailwind.config.js        # Tailwind customization ├── tsconfig.app.json         # TypeScript app configuration ├── tsconfig.json             # Global TypeScript config ├── tsconfig.node.json        # Node-specific TypeScript config ├── vite.config.ts            # Vite build and plugin configuration └── README.md                 # Project info and instructions
+public/
+    ├── images/
+    └── 404.html
+src/
+    ├── components/
+        ├── CallToAction.tsx
+        ├── ContactSection.tsx
+        ├── Footer.tsx
+        ├── Header.tsx
+        ├── HeroSection.tsx
+        ├── LoadingScreen.tsx
+        ├── NewsEvents.tsx
+        └── ThemeToggle.tsx
+    ├── lib/
+        └── utils.ts
+    ├── pages/
+        ├── About.tsx
+        ├── Admission.tsx
+        ├── Apply.tsx
+        ├── Communication.tsx
+        ├── HomePage.tsx
+        ├── InformationSystems.tsx
+        ├── Mathematics.tsx
+        └── Programs.tsx
+    ├── types/
+        └── aos.d.ts
+    ├── App.tsx
+    ├── index.css
+    ├── main.tsx
+    └── vite-env.d.ts
+.gitignore
+components.json
+deploy.sh
+eslint.config.js
+index.html
+package-lock.json
+package.json
+README.md
+tailwind.config.js
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
 
 ---
 
