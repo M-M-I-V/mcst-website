@@ -15,54 +15,6 @@ This is the official website of **Mandaluyong College of Science and Technology 
 
 ---
 
-## 📁 Project Structure
-
-public/
-    ├── images/
-    └── 404.html
-src/
-    ├── components/
-        ├── CallToAction.tsx
-        ├── ContactSection.tsx
-        ├── Footer.tsx
-        ├── Header.tsx
-        ├── HeroSection.tsx
-        ├── LoadingScreen.tsx
-        ├── NewsEvents.tsx
-        └── ThemeToggle.tsx
-    ├── lib/
-        └── utils.ts
-    ├── pages/
-        ├── About.tsx
-        ├── Admission.tsx
-        ├── Apply.tsx
-        ├── Communication.tsx
-        ├── HomePage.tsx
-        ├── InformationSystems.tsx
-        ├── Mathematics.tsx
-        └── Programs.tsx
-    ├── types/
-        └── aos.d.ts
-    ├── App.tsx
-    ├── index.css
-    ├── main.tsx
-    └── vite-env.d.ts
-.gitignore
-components.json
-deploy.sh
-eslint.config.js
-index.html
-package-lock.json
-package.json
-README.md
-tailwind.config.js
-tsconfig.app.json
-tsconfig.json
-tsconfig.node.json
-vite.config.ts
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -81,7 +33,6 @@ npm run dev
 
 Open your browser and navigate to http://localhost:5173.
 
-
 ---
 
 🏗️ Build for Production
@@ -90,9 +41,7 @@ npm run build
 
 The production-ready files will be generated in the dist/ folder.
 
-
 ---
-
 
 ## 🌐 Deployment & Setup on Windows
 
@@ -132,14 +81,12 @@ git clone https://github.com/your-username/your-repo.git
 cd your-repo
 
 
-
 ✅ You can now use:
 
 git pull
 git add .
 git commit -m "Your message"
 git push origin main  # or master
-
 
 ---
 
@@ -151,19 +98,15 @@ Steps:
 
 1. Go to your GitHub repo
 
-
 2. Click Code > Download ZIP
 
-
 3. Extract the ZIP
-
 
 
 If you want to use Git commands later:
 
 git init
 git remote add origin https://github.com/your-username/your-repo.git
-
 
 ---
 
@@ -180,13 +123,11 @@ git clone https://github.com/your-username/the-repo.git
 cd the-repo
 
 
-
 You're ready to push:
 
 git add .
 git commit -m "Changes"
 git push origin main
-
 
 ---
 
@@ -196,7 +137,6 @@ This gives you a code snapshot — no Git tracking. You’ll need to run:
 
 git init
 git remote add origin https://github.com/your-username/the-repo.git
-
 
 ---
 
@@ -213,9 +153,7 @@ To reflect changes:
 
 1. Run npm run build
 
-
 2. Redeploy the contents of the dist/ folder
-
 
 ---
 
