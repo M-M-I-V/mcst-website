@@ -1,6 +1,6 @@
-# MCST Official Website
+# Mandaluyong College of Science and Technology Official Website
 
-This is the official website of **Mandaluyong College of Science and Technology (MCST)**.  
+This is the official website of **Mandaluyong College of Science and Technology**.  
 It was developed using a modern front-end tech stack, and is designed for clarity, responsiveness, and maintainability.
 
 ---
