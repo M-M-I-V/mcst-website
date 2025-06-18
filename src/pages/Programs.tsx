@@ -141,9 +141,9 @@ const Programs = () => {
           <ContactSection />
 
           {/* Call to Action */}
-          <div className="mt-8 text-center">
+          <div className="mt-2 text-center">
             <p className="text-lg text-gray-700 dark:text-slate-300 mb-4">Ready to start your journey with us?</p>
-            <div className="space-x-4">
+            <div className="space-x-4 flex justify-center">
               <button
                 onClick={() =>
                   window.open(

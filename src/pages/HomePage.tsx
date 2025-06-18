@@ -19,6 +19,7 @@ const HomePage = () => {
 
   return (
     <>
+      {/* Hero Section */}
       <HeroSection />
 
       <section className="py-16 px-auto">
