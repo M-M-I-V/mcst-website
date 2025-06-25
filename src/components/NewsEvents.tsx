@@ -15,13 +15,13 @@ const NewsEvents = () => {
 
   const newsItems = [
     {
-      href: "https://www.facebook.com/share/p/1ApNwESsTN/",
-      image: "grades.jpg",
-      alt: "Schedule of Releasing of Grade Slip",
+      href: "https://www.facebook.com/share/p/15g6Pv59Mc/",
+      image: "nursing.jpg",
+      alt: "Institute of Nursing announcement",
       type: "Announcement",
-      title: "Releasing of Grade Slip",
-      description: "Schedule of releasing of grade slip of 1st and 2nd year students.",
-      date: "May 30, 2025",
+      title: "Institute of Nursing",
+      description: "The MCST Institute of Nursing prepares compassionate professionals for service, aligned with Mandaluyong’s vision of empowerment through education.",
+      date: "June 17, 2025",
     },
     {
       href: "https://www.facebook.com/share/p/1ErAgQujM1/",
@@ -53,9 +53,8 @@ const NewsEvents = () => {
           data-aos-offset="200"
           className="text-center mb-12"
         >
-          <h4 className="text-sm font-medium text-gray-600 uppercase dark:text-slate-300">News and Events</h4>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-200">Latest Insights and Updates</h2>
-          <p className="text-gray-600 dark:text-slate-300">Explore our latest articles and insights.</p>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-200">News and Events</h2>
+          <p className="text-gray-600 dark:text-slate-300">Explore our latest articles and updates.</p>
         </div>
 
         <div
@@ -85,19 +84,6 @@ const NewsEvents = () => {
                 <p className="text-xs font-medium text-gray-500 dark:text-slate-300">{item.type}</p>
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-200">{item.title}</h3>
                 <p className="text-xs text-gray-600 dark:text-slate-300">{item.description}</p>
-
-                <div className="flex items-center mt-4 text-gray-500 dark:text-slate-300">
-                  <img
-                    src={`${basePath}/images/mcst-logo.png`}
-                    alt="Mandaluyong College of Science and Technology Logo"
-                    className="h-6 w-6 rounded-full mr-2 transition duration-200 dark:brightness-75 dark:contrast-125"
-                    loading="lazy"
-                  />
-                  <div>
-                    <p className="text-xs font-medium">Mandaluyong College of Science and Technology</p>
-                    <p className="text-xs">{item.date} · 1 min read</p>
-                  </div>
-                </div>
               </div>
             </a>
           ))}

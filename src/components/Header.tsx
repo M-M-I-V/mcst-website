@@ -69,7 +69,7 @@ const Header = () => {
             />
           </Link>
           <Link to="/">
-            <h1 className="text-lg sm:text-xl font-bold dark:text-slate-300">
+            <h1 className="text-base sm:text-lg md:text-xl font-bold dark:text-slate-300">
               Mandaluyong College of Science and Technology
             </h1>
           </Link>
