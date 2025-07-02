@@ -16,5 +16,5 @@ cp -r /home/mmiv/Downloads/mcst-website/dist/* .
 
 # Commit and push
 git add .
-git commit -m "mcst v3.1"
+git commit -m "Updated Header section"
 git push origin main
