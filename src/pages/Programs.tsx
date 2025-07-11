@@ -59,6 +59,15 @@ const Programs = () => {
       link: "/programs/b-physical-education",
       isNew: true,
     },
+    {
+      title: "Bachelor of Science in Nursing",
+      description:
+        "Gain comprehensive knowledge and practical skills in nursing, preparing for a rewarding career in healthcare, patient care, and community health services.",
+      duration: "4 years",
+      strand: "All Strands",
+      link: "/programs/bs-nursing",
+      isNew: true,
+    },
   ]
 
   return (

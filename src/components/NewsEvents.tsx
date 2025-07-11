@@ -15,13 +15,13 @@ const NewsEvents = () => {
 
   const newsItems = [
     {
-      href: "https://www.facebook.com/share/p/15g6Pv59Mc/",
-      image: "nursing.jpg",
-      alt: "Institute of Nursing announcement",
+      href: "https://www.facebook.com/share/p/14LNNivzTVS/",
+      image: "bsn.jpg",
+      alt: "Bachelor of Science in Nursing Open for Admission",
       type: "Announcement",
-      title: "Institute of Nursing",
-      description: "The MCST Institute of Nursing prepares compassionate professionals for service, aligned with Mandaluyong’s vision of empowerment through education.",
-      date: "June 17, 2025",
+      title: "Bachelor of Science in Nursing Open for Admission",
+      description: "Nursing education teaches healing while fostering compassion, resilience, and a strong commitment to serving others with kindness and hope.",
+      date: "July 8, 2025",
     },
     {
       href: "https://www.facebook.com/share/p/1ErAgQujM1/",
